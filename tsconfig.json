@@ -1,26 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "target": "esnext", // Use ESNext to align with modern JavaScript features
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true, // Allows JavaScript files to be compiled
+    "skipLibCheck": true, // Skip type checking of all declaration files
+    "esModuleInterop": true, // Enables interop between CommonJS and ES Modules
+    "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
+    "strict": true, // Enables all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Ensure file names are consistent across the project
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough in switch statements
+    "module": "commonjs", // Use CommonJS to ensure compatibility with Jest
+    "moduleResolution": "node", // Resolve modules using Node.js resolution algorithm
+    "resolveJsonModule": true, // Allows importing JSON files as modules
+    "isolatedModules": true, // Ensures TypeScript files are treated as isolated modules
+    "noEmit": true, // Do not emit compiled files (important for Jest)
+    "jsx": "react-jsx" // Use the new JSX transform in React 17+
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "build", "dist"]
 }
