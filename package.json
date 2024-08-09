@@ -55,5 +55,6 @@
     "jest": "^29.7.0",
     "jest-watch-typeahead": "^0.6.1",
     "ts-jest": "^29.2.4"
-  }
+  },
+  "proxy": "https://sw-api.starnavi.io"
 }

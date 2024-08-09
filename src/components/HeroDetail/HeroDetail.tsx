@@ -175,7 +175,7 @@ const HeroDetail: React.FC<HeroDetailProps> = ({ hero }) => {
         <ReactFlow
           nodes={nodes}
           edges={edges}
-          style={{ width: '100%', height: '500px' }}
+          style={{ width: '100%', height: '80vh' }}
         />
       </Grid>
     </Grid>
