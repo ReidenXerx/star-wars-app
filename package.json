@@ -24,6 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "REACT_APP_API_URL=https://sw-api.starnavi.io npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!axios)/'",
     "eject": "react-scripts eject"
   },
@@ -52,9 +54,11 @@
     "@jest/globals": "^29.7.0",
     "@types/jest": "^27.5.2",
     "babel-jest": "^29.7.0",
+    "gh-pages": "^6.1.1",
     "jest": "^29.7.0",
     "jest-watch-typeahead": "^0.6.1",
     "ts-jest": "^29.2.4"
   },
+  "homepage": "https://ReidenXerx.github.io/star-wars-app",
   "proxy": "https://sw-api.starnavi.io"
 }
